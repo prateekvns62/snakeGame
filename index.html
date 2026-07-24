@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nokia Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="phone" aria-label="Nokia style snake game">
+      <section class="screen-card">
+        <div class="brand-row">
+          <span class="signal" aria-hidden="true">▂▄▆█</span>
+          <h1>Nokia Snake</h1>
+          <span id="clock" class="clock">00:00</span>
+        </div>
+
+        <div class="score-board" aria-live="polite">
+          <div>
+            <span>Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span>Best</span>
+            <strong id="bestScore">0</strong>
+          </div>
+          <div>
+            <span>Speed</span>
+            <strong id="speedLabel">1x</strong>
+          </div>
+        </div>
+
+        <div class="game-wrap">
+          <canvas id="game" width="360" height="360" aria-label="Snake game board"></canvas>
+          <div id="overlay" class="overlay">
+            <p class="status" id="statusText">Ready?</p>
+            <p class="hint">Press Space or tap Play to start</p>
+          </div>
+        </div>
+
+        <div class="controls-info">
+          <p><strong>Move:</strong> Arrow keys / W A S D / swipe</p>
+          <p><strong>Play & Pause:</strong> Spacebar</p>
+        </div>
+      </section>
+
+      <section class="keypad" aria-label="Game controls">
+        <button id="restartBtn" class="soft-key">Restart</button>
+        <button id="playPauseBtn" class="center-key">▶ Play</button>
+        <button id="soundBtn" class="soft-key" aria-pressed="true">Sound On</button>
+
+        <button class="direction up" data-direction="up" aria-label="Move up">▲</button>
+        <button class="direction left" data-direction="left" aria-label="Move left">◀</button>
+        <button class="direction down" data-direction="down" aria-label="Move down">▼</button>
+        <button class="direction right" data-direction="right" aria-label="Move right">▶</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
