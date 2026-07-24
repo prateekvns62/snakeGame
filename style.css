@@ -190,13 +190,15 @@ button:active {
   grid-row: 3;
 }
 
+@media (max-width: 500px) {
+  .controls-info {
+   display: none;
+  }
+}
+
 @media (max-width: 420px) {
   body {
     padding: 0.5rem;
-  }
-
-  .controls-info {
-   display: none;
   }
 
   .phone {
