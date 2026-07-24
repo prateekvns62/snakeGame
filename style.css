@@ -195,6 +195,10 @@ button:active {
     padding: 0.5rem;
   }
 
+  .controls-info {
+   display: none;
+  }
+
   .phone {
     border-radius: 1.3rem;
   }
